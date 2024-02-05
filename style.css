@@ -1,0 +1,46 @@
+body {
+    background-color: lightslategray;
+    margin: 0;
+    position: absolute;
+    display: grid;
+    inset: 0;
+    align-content: center;
+    place-items: center;
+    align-content: space-between;
+}
+
+.Front-Page {
+    background-color: white;
+    height: 100vh;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links {
+    height: 50px;
+}
+
+.links button {
+    padding: 15px;
+    border: none;
+}
+
+button:hover {
+    background-color: red;
+}
+
+.Main-Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MyPhoto {
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+}
+
