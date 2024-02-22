@@ -1,5 +1,4 @@
 body {
-    margin: 0;
     position: absolute;
     display: grid;
     inset: 0;
@@ -7,14 +6,15 @@ body {
     place-items: center;
     padding-left: 10%;
     padding-right: 10%;
+    background-color: grey;
 }
 
 .Front-Page {
-    background-color: white;
     display: flex;
-    width: 70%;
-    height: 60vh;
+    width: 80%;
+    height: 90vh;
     flex-direction: column;
+    box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
 }
 
 .links {
@@ -30,16 +30,12 @@ body {
     background-color: #c8b6c4;
 }
 
-.links button:first-child {
-    border-radius: 20px 0px 0px 0px;
-}
-
-.links button:nth-child(2) {
-    border-radius: none;
-}
-
-.links button:nth-child(3) {
-    border-radius: 0px 20px 0px 0px;
+.header-photo {
+    height: 200px;
+    /*background-image: url(photos/ProgrammingHeader.jpg);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
 }
 
 .WorkInProgress {
@@ -67,8 +63,7 @@ button:hover {
     align-items: center;
     background-color: #c8b6c4;
     height: 100%;
-    justify-content: center;
-    border-radius: 0px 0px 20px 20px;
+    justify-content: space-evenly;
 }
 
 h1, h2, p {
