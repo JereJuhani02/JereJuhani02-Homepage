@@ -4,17 +4,15 @@ body {
     inset: 0;
     align-content: center;
     place-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    background-color: grey;
 }
 
 .Front-Page {
     display: flex;
     width: 80%;
-    height: 90vh;
+    height: 70vh;
     flex-direction: column;
     box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+    justify-content: space-between;
 }
 
 .links {
@@ -27,7 +25,7 @@ body {
     width: 100%;
     height: 60px;
     border: 30px;
-    background-color: #c8b6c4;
+    background-color: #99afd2;
 }
 
 .header-photo {
@@ -50,25 +48,25 @@ body {
 }
 
 button:hover {
-    background-color: red;
-}
-
-button:hover {
-    background-color: red;
+    background-color: #6f92cb;
 }
 
 .Main-Content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #c8b6c4;
-    height: 100%;
+    background-color: #617eac;
     justify-content: space-evenly;
 }
 
 h1, h2, p {
     margin-left: 20px;
     margin-right: 20px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+p {
+    font-family: "PT Sans", sans-serif;;
 }
 
 .MyPhoto {
@@ -80,9 +78,35 @@ h1, h2, p {
 ul {
     display: flex;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 li {
-    background-color: red;
+    background-color: #6f92cb;
     padding: 20px;
+    border-radius: 15px;
+}
+
+.Skills {
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+    .Front-Page {
+        box-shadow: none;
+    }
+    
+    body {
+        background-color: red;
+        outline: 2px solid blue;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        padding: 20px 50px;
+    }
 }
